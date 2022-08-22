@@ -18,6 +18,14 @@ a {
 	text-decoration: none;
 }
 
+
+  
+/* :root {
+	--animate-duration: 800ms;
+	--animate-delay: 0.9s;
+	-o-animation-iteration-count: infinite;
+  } */
+
 .contenedor {
 	width: 100%;
 	margin: 20px auto;
@@ -38,6 +46,35 @@ a {
 	padding: 20px;
 	background: #fff;
 	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+}
+
+h1 {
+
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #095802 0%,
+    #297a10 29%,
+    #5c915b 67%,
+    #ffffff 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: rgb(21, 21, 36);
+  background-clip: text;
+ /* text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  animation: textclip 2s linear 8;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 
 .header .logo {
